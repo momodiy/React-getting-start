@@ -4,10 +4,10 @@
 * Time: 11:56
 * Project: webpack-base
 * */
-console.log(6668989866);
-require('./jsx')
 import React from 'react'  // 创建组件、虚拟dom元素，生命周期
 import ReactDom from 'react-dom' // 创建好的组件和虚拟dom放在页面上展示
+
+import '@/class'
 
 
 /**
@@ -18,7 +18,7 @@ import ReactDom from 'react-dom' // 创建好的组件和虚拟dom放在页面�
  * 其他参数 其他子节点
  * */
 
-const node1 = React.createElement('h3', {id: 'hhh', title: 'good job'}, '这是一首简单的小情歌')
+// const node1 = React.createElement('h3', {id: 'hhh', title: 'good job'}, '这是一首简单的小情歌')
 //
 // const nodeWrap = React.createElement('h2', null, '', node1)
 
@@ -27,9 +27,10 @@ const node1 = React.createElement('h3', {id: 'hhh', title: 'good job'}, '这是�
  * 参数一：要渲染的虚拟dom元素
  * 参数二：放置虚拟dom的容器
  * */
-const tt = <div>interesting</div>
+// const testDom = <div>interesting</div>
 
 
-// ReactDom.render(tt, document.getElementById('app'))
+// ReactDom.render(testDom, document.getElementById('app'))
 
 
+ReactDom.render(<div>123</div>, document.getElementById('app'))
