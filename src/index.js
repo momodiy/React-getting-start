@@ -9,6 +9,7 @@ import ReactDom from 'react-dom' // 创建好的组件和虚拟dom放在页面�
 
 import '@/class'
 import '@/class-extend'
+import Entry from '@/class-component'
 
 
 /**
@@ -35,3 +36,13 @@ import '@/class-extend'
 
 
 ReactDom.render(<div>123</div>, document.getElementById('app'))
+
+let params ={
+  name: '小情歌',
+  author: '苏打绿',
+  evaluate: 'wonderful'
+}
+
+// Entry 标签实际为Entry类的一个实例对象
+// 使用扩展运算符简化传参
+ReactDom.render(<Entry {...params}/>, document.getElementById('newpp'))
