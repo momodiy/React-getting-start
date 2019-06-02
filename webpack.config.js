@@ -27,6 +27,11 @@ module.exports = {
         test: /\.js|jsx$/,
         use: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        // 添加`？modules` 启用模块化
+        use: ['style-loader', 'css-loader?modules&localIdentName=[path][name]-[local]-[hash:5]'] // 解析顺序，从后向前依次解析，先'css-loader'，再'style-loader'
       }
 
     ]

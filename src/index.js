@@ -12,6 +12,7 @@ import '@/class-extend'
 import Entry from '@/class-component'
 
 import CommitList from '@/components/commitList'
+import CommitList2 from '@/components/commitList2'
 
 /**
  * 创建虚拟dom
@@ -38,10 +39,8 @@ import CommitList from '@/components/commitList'
 //  使用function构造普通的无状态组件
 
 
-
-
-ReactDom.render(<div style={{border:'1px solid grey'}}>
-  <CommitList></CommitList>
+ReactDom.render(<div style={{border: '1px solid grey'}}>
+  <CommitList2></CommitList2>
 </div>, document.getElementById('app'))
 
 let params = {
