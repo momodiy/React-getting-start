@@ -1,5 +1,5 @@
 import React from 'React'
-import commitItem from '@/css/commitItem.css'
+import commitItem from '@/css/commitItem.scss'
 
 console.log(commitItem);
 

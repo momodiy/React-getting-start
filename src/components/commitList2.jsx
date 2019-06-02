@@ -6,9 +6,9 @@ import CommitItem from '@/components/commitItems2'
 // 直接导入的css样式表默认在全局生效（一处调用，全局生效）
 
 
-import cssObj from '@/css/commitLists.css'
+import cssObj from '@/css/commitLists.scss'
 
-console.log(cssObj);
+import bootcss from 'bootstrap/dist/css/bootstrap.css'
 
 export default class CommitList extends React.Component {
   constructor() {
@@ -23,6 +23,7 @@ export default class CommitList extends React.Component {
       ]
     }
   }
+
   // style={{color: 'red', fontSize: '25px', zIndex: 3, fontWeight: 200,textAlign: 'center'}}
 
   render() {
@@ -30,6 +31,7 @@ export default class CommitList extends React.Component {
       {/* 设置标签样式，格式应该为  style={{color:'red',fontSize: size}}  其中size为变量*/}
 
       <h1 className={cssObj.title}>这是评论列表组件</h1>
+      <button className={['btn', 'btn-success'].join(' ')}>最强按钮</button>
       {this.state.commonList.map(v => <CommitItem key={v.id} {...v}></CommitItem>)}
     </div>
   }
