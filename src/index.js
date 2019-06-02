@@ -11,6 +11,7 @@ import '@/class'
 import '@/class-extend'
 import Entry from '@/class-component'
 
+import CommitList from '@/components/commitList'
 
 /**
  * 创建虚拟dom
@@ -34,10 +35,16 @@ import Entry from '@/class-component'
 
 // ReactDom.render(testDom, document.getElementById('app'))
 
+//  使用function构造普通的无状态组件
 
-ReactDom.render(<div>123</div>, document.getElementById('app'))
 
-let params ={
+
+
+ReactDom.render(<div style={{border:'1px solid grey'}}>
+  <CommitList></CommitList>
+</div>, document.getElementById('app'))
+
+let params = {
   name: '小情歌',
   author: '苏打绿',
   evaluate: 'wonderful'
