@@ -52,4 +52,4 @@ let params = {
 
 // Entry 标签实际为Entry类的一个实例对象
 // 使用扩展运算符简化传参
-ReactDom.render(<Entry {...params}/>, document.getElementById('newpp'))
+// ReactDom.render(<Entry {...params}/>, document.getElementById('newpp'))

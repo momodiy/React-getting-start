@@ -1,4 +1,3 @@
-
 // 定义父组件使用class关键字
 import React from 'react'
 import CommitItem from '@/components/commitItems'
@@ -19,7 +18,9 @@ export default class CommitList extends React.Component {
 
   render() {
     return <div>
-      <h1>这是评论列表组件</h1>
+      {/* 设置标签样式，格式应该为  style={{color:'red',fontSize: size}}  其中size为变量*/}
+
+      <h1 style={{color: 'red', fontSize: '25px', zIndex: 3, fontWeight: 200,textAlign: 'center'}}>这是评论列表组件</h1>
       {this.state.commonList.map(v => <CommitItem key={v.id} {...v}></CommitItem>)}
     </div>
   }
